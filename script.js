@@ -83,7 +83,8 @@ btnNew.addEventListener('click', function () {
   diceEl.classList.remove('hidden');
   activePlayer = 0;
   scores = [0, 0];
-  player0El.classList.add('player-active');
+  player0El.classList.add('player--active');
+  player1El.classList.remove('player--active');
   currentScore = 0;
   curren0El.textContent = 0;
   current1El.textContent = 0;
