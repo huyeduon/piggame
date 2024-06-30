@@ -19,8 +19,7 @@ body {
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Push footer to the bottom */
-  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
 }
 
 /* LAYOUT */
@@ -45,15 +44,14 @@ main {
 }
 
 .bottom-footer {
-  /* Remove absolute positioning and related properties */
+  /* position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  z-index: 1;
   color: white;
   font-size: 16px;
   text-align: center;
-  padding: 1rem; /* Add some padding if needed */
-  background-color: rgba(255, 255, 255, 0.35); /* Match the main section's background */
-  backdrop-filter: blur(200px); /* Match the main section's blur */
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25); /* Match the main section's shadow */
-  border-radius: 0 0 9px 9px; /* Match the main section's border-radius for bottom corners */
 }
 
 h1 {
