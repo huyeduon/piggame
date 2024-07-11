@@ -27,9 +27,27 @@
       </section>
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn-help show-modal">🔄 Help</button>
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1 class="modal-text-title">How to play:</h1>
+        <div class="modal-text">
+          <p>
+            Click Roll Dice to gain points, you can click many times until you
+            click HOLD. Rolling to 1 will forfeit your turn and reset the
+            current roll points. Your turn will be transfer to other player.
+          </p>
+          <p>
+            Make sure to Click Hold to save points and transfer turn to other
+            player. Do not try to click many times as you may roll to 1.Who
+            gains 100 points first will be the winner.
+          </p>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
   </body>
